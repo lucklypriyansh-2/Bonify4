@@ -1,4 +1,4 @@
-package com.hrportal.main;
+package com.bonify4.main;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

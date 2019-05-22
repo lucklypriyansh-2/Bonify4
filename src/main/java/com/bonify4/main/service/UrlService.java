@@ -1,4 +1,4 @@
-package com.hrportal.main.service;
+package com.bonify4.main.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,11 +14,10 @@ public class UrlService {
 
 	/**
 	 * 
-	 * <li>1 Breaks url string in string array seperated by /</li>
-	 *<li> 2 maintains list of all of the tokens in</li>
-	 * <li> array for first url 3 maintains list of all of the index of token that are unchanged</li>
-	 * <li>4 break each url in string token and checks each token at index number maintained in list with corrosponding token number in first url token list</li>
-	 * <li>5 if found that this token at index i is not same from same token in first list of token remove index number of index list</li>
+	 * <li>1 Breaks first input url string in string array seperated by /</li>
+	 *<li> 2 maintains list of all of the tokens of first url in array named firsturltokensplitted </li>
+	 * <li>3 break each remaining  url(delimiter "/") in string token array  and then read  the  token present at every index number which is present in indexofstatictoken named list  </li>
+	 * <li>5 if found that this token at index i is not same as  token in first list of token remove index number  from   indexofstatictoken  list</li>
 	 * Time complexity worst case O(n2) best Case O(N) average case  O(n*(n-k) where k is number of varible part in token as soon as k increase complexity decrease
 	 * Space complexity O(N)
 	 * 

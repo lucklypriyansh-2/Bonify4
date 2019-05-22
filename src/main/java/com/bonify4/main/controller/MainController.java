@@ -1,4 +1,4 @@
-package com.hrportal.main.controller;
+package com.bonify4.main.controller;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hrportal.main.service.UrlService;
+import com.bonify4.main.service.UrlService;
 
 @RestController
 public class MainController {
@@ -17,12 +17,7 @@ public class MainController {
 
 	@PostMapping("/findpathvariable")
 	public String findvaribale(@RequestBody ArrayList<String> url) {
-		
-		
-		
 		return urlService.identifyDynamicParts(url);
-		
-
 	}
 
 }
