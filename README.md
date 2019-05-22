@@ -12,12 +12,18 @@ java -jar Question4-0.0.1-SNAPSHOT.jar &
 
 CURL REQUEST
 
-curl -X GET \
-  http://localhost:8080/executedsl/Electricity \
-  -H 'Postman-Token: 3bd8d195-9026-4c44-ac39-5bb18d73531a' \
-  -H 'cache-control: no-cache'
+Sample request
 
-curl -X GET \
-  http://localhost:8080/executedsl/Apartment \
-  -H 'Postman-Token: 3bd8d195-9026-4c44-ac39-5bb18d73531a' \
-  -H 'cache-control: no-cache'
+curl -X POST \
+  http://localhost:8080/findpathvariable \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: f15a7b59-e1bc-48bd-b489-46c3b9c75a97' \
+  -H 'cache-control: no-cache' \
+  -d '[
+  "/users/Maria/info/location",
+  "/users/Marcelo/info/birthday",
+  "//Marcelo/info/birthday"
+  
+]'
+
