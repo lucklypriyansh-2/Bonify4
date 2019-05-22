@@ -8,6 +8,7 @@ DOWNLOAD THE PROJECT
 GO TO DIRECTORY WHERE PROJECT IS DOWNLOADED 
 run ./mvnw clean install
 cd target/
+
 java -jar Question4-0.0.1-SNAPSHOT.jar &
 
 CURL REQUEST
